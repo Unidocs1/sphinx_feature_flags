@@ -2,6 +2,7 @@
 Xsolla Sphinx Extension: sphinx_feature_flags
 - See README for more info
 """
+
 from docutils import nodes
 from docutils.parsers.rst import Directive, directives
 from sphinx.util.docutils import SphinxDirective
@@ -15,12 +16,12 @@ class SphinxFeatureFlags(SphinxDirective):
     has_content = True
     required_arguments = 1
     option_spec = {
-        'fallback': directives.flag,
+        "fallback": directives.flag,
     }
 
     def run(self):
         flag_name = self.arguments[0]
-        is_fallback = 'fallback' in self.options
+        is_fallback = "fallback" in self.options
 
         feature_flag_enabled = self.env.config.feature_flags.get(flag_name, False)
 
@@ -42,10 +43,3 @@ def visit_feature_flag_node(self, node):
 
 def depart_feature_flag_node(self, node):
     pass
-
-
-# ENTRY POINT >>
-def setup(app):
-    app.add_config_value('feature_flags', {}, 'env')
-    app.add_directive('feature-flag', SphinxFeatureFlags)
-    app.add_node(feature_flag_node, html=(visit_feature_flag_node, depart_feature_flag_node))
