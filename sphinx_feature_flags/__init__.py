@@ -1,4 +1,4 @@
-# source/_extensions/sphinx_feature_flags/__init__.py
+# sphinx_feature_flags/__init__.py
 from sphinx.application import Sphinx
 from .sphinx_feature_flags import (
     SphinxFeatureFlags,
