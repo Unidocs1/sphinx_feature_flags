@@ -1,5 +1,8 @@
 # Sphinx Extension: Feature Flags
 
+<!-- Badges go here on the same line; PyPi doesn't support `\` or single-multi-line (it'll stack vertically) -->
+[![PyPI](https://img.shields.io/pypi/v/sphinx-feature-flags)](https://pypi.org/project/sphinx-feature-flags/) [![PyPI - License](https://img.shields.io/pypi/l/sphinx-feature-flags)](https://opensource.org/licenses/MIT)
+
 ## Description
 
 This Sphinx extension allows for the `feature-flag` directive to show (if `True`) or fallback (if `False` and
