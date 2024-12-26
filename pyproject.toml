@@ -2,7 +2,7 @@
 name = "sphinx_feature_flags"
 version = "1.0.5"
 description = "This Sphinx extension allows for the `feature-flag` directive to hide/show content based on build-time flags."
-authors = ["Xsolla Backend <xbe@xsolla.com>"]
+authors = ["Xsolla Backend <xbe@xsolla.com>", "Dylan Hunt <d.hunt@xsolla.com>"]
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
