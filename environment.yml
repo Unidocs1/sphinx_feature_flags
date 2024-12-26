@@ -1,0 +1,9 @@
+# Conda env
+name: sphinx-feature-flags
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -r requirements-dev.txt
