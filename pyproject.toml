@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sphinx_feature_flags"
-version = "1.0.8"
+version = "1.0.9"
 description = "This Sphinx extension allows for the `feature-flag` directive to hide/show content based on build-time flags."
 authors = ["Xsolla Backend <xbe@xsolla.com>", "Dylan Hunt <d.hunt@xsolla.com>"]
 readme = "README.md"
